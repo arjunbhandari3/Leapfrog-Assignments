@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TuTangle</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header-top">
+        <div class="header-top-content middlewidth clearfix">
+          <div class="logoarea clearfix">
+            <img class="logo" src="images/logo.png" />
+            <div class="search-wrapper top-nav">
+              <form>
+                <div class="search-input">
+                  <span class="left-corner"
+                    ><img src="./images/search-left-corner.png" alt="search"
+                  /></span>
+                  <input
+                    type="text"
+                    placeholder="Search by Term, Member, or Entry Title"
+                  />
+                  <span class="close-button"
+                    ><img src="images/close.png" alt="Search Close Button"
+                  /></span>
+                  <span class="right-corner"
+                    ><img src="./images/search-right-corner.png" alt="search"
+                  /></span>
+                  <span class="search-button"
+                    ><a href="#"
+                      ><img
+                        src="images/search-button-1.png"
+                        alt="Search Button" /></a
+                  ></span>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="profilearea clearfix">
+            <div class="profilename clearfix">
+              <span>Joe Burros</span>
+              <span id="burger" class="burger-more"
+                ><img src="images/burger-more.png" alt="more"
+              /></span>
+            </div>
+            <ul class="usernav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="header-bottom-content middlewidth clearfix">
+          <ul class="optionarea clearfix">
+            <li><a href="#">Create New Entry</a></li>
+            <li><a href="#">My Topic Boxes</a></li>
+            <li><a href="#">Friends</a></li>
+            <li><a href="#">Invite New Friends</a></li>
+          </ul>
+
+          <ul class="statusarea clearfix">
+            <li class="statusarea-tbi active">
+              <a href="#"><span>Topic Boxes Invites -</span> <span>2</span> </a>
+            </li>
+            <li class="statusarea-fr">
+              <a href="#"><span>Friend Requests -</span> <span>0</span> </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="body-wrapper">
+      <div class="main-container clearfix middlewidth">
+        <div class="left-container">
+          <div class="searches">
+            <div class="rsearch">
+              <h2 class="heading">Recent Searches</h2>
+
+              <ul class="rsearch-download">
+                <li>
+                  <a href="#"
+                    ><span>Christopher Nolan and the Bad seeds</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"><span>African Animals</span></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="rsearch">
+              <h2 class="heading">Recent Searches</h2>
+
+              <ul class="rsearch-burger">
+                <li>
+                  <a href="#"
+                    ><span
+                      >Different versions of the Tristan and Isolde
+                      Prelude</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="#"><span>Music</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>Guitar</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>Bob Cohen</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>Mark Schnack</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>Jefferson Dickey</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Left container (Searches) Wrapper-->
+
+          <div class="entries">
+            <div class="header">
+              <h1>Entries</h1>
+            </div>
+
+            <div class="content">
+              <div class="tab-content clearfix">
+                <div class="tab-top">
+                  <h2 class="tab-top-left">All Entries</h2>
+
+                  <h2 class="tab-top-right">Subscribed</h2>
+                </div>
+
+                <ul class="tab-bottom">
+                  <li class="tab-button active-button">
+                    <a href="#">All Members</a>
+                  </li>
+                  <li class="tab-button"><a href="#">Friends</a></li>
+                  <li class="tab-button third-button">
+                    <a href="#">New Entry</a>
+                  </li>
+                  <li class="tab-button"><a href="#">New Comment</a></li>
+                </ul>
+              </div>
+
+              <ul class="main-content">
+                <li class="post clearfix">
+                  <div class="userpic clearfix">
+                    <img
+                      src="images/frame.png"
+                      alt="frame"
+                      class="image-frame"
+                    />
+                    <img src="images/user-1.png" alt="image" class="image" />
+                  </div>
+
+                  <div class="post-content clearfix">
+                    <div class="post-title">
+                      <a href="#"
+                        >Day for Night by Francois Truffaut, a ground breaking
+                        film</a
+                      >
+                    </div>
+
+                    <ul class="post-info-a clearfix">
+                      <li>
+                        <span class="post-info-by">by</span>
+                        <a class="username" href="#">Alan Coe</a>
+                      </li>
+                      <li><span class="date">February 10, 2012</span></li>
+                      <li><span class="status">Subscribed</span></li>
+                    </ul>
+
+                    <div class="post-info-b">
+                      <span class="post-info-span">From Topic Box:</span>
+                      <a class="topic-box" href="#">My Favourite Movies</a>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="post clearfix">
+                  <div class="userpic clearfix">
+                    <img
+                      src="images/frame.png"
+                      alt="frame"
+                      class="image-frame"
+                    />
+                    <img src="images/user-2.png" alt="image" class="image" />
+                  </div>
+
+                  <div class="post-content clearfix">
+                    <div class="notification">
+                      <span>new entry!</span>
+                    </div>
+
+                    <div class="post-title">
+                      <a href="#"
+                        >Day for Night by Francois Truffaut, a ground breaking
+                        film</a
+                      >
+                    </div>
+
+                    <ul class="post-info-a clearfix">
+                      <li>
+                        <span class="post-info-by">by</span>
+                        <a class="username" href="#">Alan Coe</a>
+                      </li>
+                      <li><span class="date">February 10, 2012</span></li>
+                    </ul>
+
+                    <div class="post-info-b">
+                      <span class="post-info-span">From Topic Box:</span>
+                      <a class="topic-box" href="#">My Favourite Movies</a>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="post clearfix">
+                  <div class="userpic clearfix">
+                    <img
+                      src="images/frame.png"
+                      alt="frame"
+                      class="image-frame"
+                    />
+                    <img src="images/user-3.png" alt="image" class="image" />
+                  </div>
+
+                  <div class="post-content clearfix">
+                    <div class="notification">
+                      <span>new comment!</span>
+                    </div>
+
+                    <div class="post-title">
+                      <a href="#"
+                        >Day for Night by Francois Truffaut, a ground breaking
+                        film</a
+                      >
+                    </div>
+
+                    <ul class="post-info-a clearfix">
+                      <li>
+                        <span class="post-info-by">by</span>
+                        <a class="username" href="#">Alan Coe</a>
+                      </li>
+                      <li><span class="date">February 10, 2012</span></li>
+                    </ul>
+
+                    <div class="post-info-b">
+                      <span class="post-info-span">From Topic Box:</span>
+                      <a class="topic-box" href="#">My Favourite Movies</a>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="post clearfix">
+                  <div class="userpic clearfix">
+                    <img
+                      src="images/frame.png"
+                      alt="frame"
+                      class="image-frame"
+                    />
+                    <img src="images/user-4.png" alt="image" class="image" />
+                  </div>
+
+                  <div class="post-content clearfix">
+                    <div class="post-title">
+                      <a href="#"
+                        >Day for Night by Francois Truffaut, a ground breaking
+                        film</a
+                      >
+                    </div>
+
+                    <ul class="post-info-a clearfix">
+                      <li>
+                        <span class="post-info-by">by</span>
+                        <a class="username" href="#">Alan Coe</a>
+                      </li>
+                      <li><span class="date">February 10, 2012</span></li>
+                      <li><span class="status">Subscribed</span></li>
+                    </ul>
+
+                    <div class="post-info-b">
+                      <span class="post-info-span">From Topic Box:</span>
+                      <a class="topic-box" href="#">My Favourite Movies</a>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="post clearfix">
+                  <div class="userpic clearfix">
+                    <img
+                      src="images/frame.png"
+                      alt="frame"
+                      class="image-frame"
+                    />
+                    <img src="images/user-5.png" alt="image" class="image" />
+                  </div>
+
+                  <div class="post-content clearfix">
+                    <div class="notification hot">
+                      <span>topic box invite!</span>
+                    </div>
+
+                    <div class="post-title">
+                      <a href="#"
+                        >Day for Night by Francois Truffaut, a ground breaking
+                        film</a
+                      >
+                    </div>
+
+                    <ul class="post-info-a clearfix">
+                      <li>
+                        <span class="post-info-by">by</span>
+                        <a class="username" href="#">Alan Coe</a>
+                      </li>
+                      <li><span class="date">February 10, 2012</span></li>
+                    </ul>
+
+                    <div class="post-info-b">
+                      <span class="post-info-span">From Topic Box:</span>
+                      <a class="topic-box" href="#">My Favourite Movies</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Middle Container (Entries) Wrapper-->
+        </div>
+        <!-- Left Content Wrapper-->
+
+        <div class="right-container">
+          <div class="rsearch">
+            <h2 class="heading">Video Tutorial</h2>
+
+            <ul class="rsearch-normal">
+              <li><a href="#">Overview of TuTangle</a></li>
+              <li><a href="#">Searching the site</a></li>
+              <li><a href="#">Previous, saved searches</a></li>
+              <li><a href="#">The topic box page</a></li>
+              <li><a href="#">Creating a topic box</a></li>
+              <li><a href="#">View topic box entries</a></li>
+              <li><a href="#">Creating an entry</a></li>
+              <li><a href="#">Privacy Settings</a></li>
+              <li><a href="#">Co-Authoring</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Right Content Wrapper-->
+      </div>
+      <!-- Body Content Wrapper-->
+    </div>
+    <!-- Body Wrapper-->
+
+    <div class="footer-wrapper">
+      <div class="footer-content clearfix middlewidth">
+        <div class="footernav">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Feedback</a></li>
+          </ul>
+        </div>
+        <div class="footerspan">
+          <span class="fright"> &copy; TuTangle 2013 </span>
+        </div>
+      </div>
+    </div>
+
+    <img src="images/close.png" id="close-button" alt="close" />
+  </body>
+</html>
