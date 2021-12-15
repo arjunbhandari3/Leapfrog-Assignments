@@ -1,0 +1,259 @@
+@media only screen and (min-width: 0px) and (max-width: 512px) {
+  .search-wrapper {
+    display: none;
+  }
+  .burger-more {
+    display: block;
+  }
+  .profilearea {
+    display: inline-block;
+  }
+  .usernav {
+    float: none;
+  }
+  .logo {
+    margin-left: 10px;
+  }
+
+  .burger-more {
+    display: block;
+    float: right;
+    margin-right: 10px;
+  }
+  .burger-more img {
+    height: 50px;
+  }
+  .search-wrapper {
+    display: none;
+  }
+  .profilearea .profilename,
+  .profilearea .usernav {
+    display: none;
+  }
+
+  .optionarea {
+    display: none;
+  }
+  .statusarea {
+    display: block;
+    margin-right: 10px;
+  }
+
+  .searches {
+    float: none;
+    width: 100%;
+  }
+  .searches .rsearch {
+    float: left;
+    width: 100%;
+    margin: 0 10px;
+  }
+  .right-container {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .entries {
+    float: none;
+    width: 100%;
+    margin-right: 10px;
+  }
+
+  .tab-top h2 {
+    font-size: 12px;
+  }
+  .third-bottom {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .tab-bottom li a {
+    font-size: 10px;
+  }
+
+  .right-container {
+    float: none;
+    width: 100%;
+    margin-right: 10px;
+  }
+
+  .footer-wrapper {
+    position: relative;
+    margin-bottom: 0;
+    height: 80px;
+  }
+
+  .footer-wrapper .footernav {
+    position: absolute;
+    margin: 10px;
+  }
+
+  .footer-wrapper .footerspan {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+  }
+}
+
+@media (min-width: 512px) and (max-width: 804px) {
+  .left-container .searches {
+    width: 100%;
+  }
+  .logo {
+    margin-left: 10px;
+  }
+
+  .burger-more {
+    display: block;
+    float: right;
+    margin-right: 10px;
+  }
+  .burger-more img {
+    height: 50px;
+  }
+
+  .search-wrapper {
+    display: none;
+  }
+  .profilearea .profilename,
+  .profilearea .usernav {
+    display: none;
+  }
+
+  .optionarea {
+    display: none;
+  }
+  .statusarea {
+    margin-right: 30px;
+  }
+
+  .searches .rsearch {
+    float: left;
+    width: 40%;
+    margin: 0 10px;
+  }
+
+  .entries {
+    width: 100%;
+    float: left;
+    margin: 10px 10px;
+  }
+
+  .entries .header {
+    margin-top: 10px;
+  }
+  .right-container {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 804px) {
+  .optionarea {
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+  .optionarea li a {
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .statusarea {
+    margin-right: 10px;
+  }
+
+  .logo {
+    margin-right: 25px;
+    margin-left: 10px;
+  }
+
+  .profilearea {
+    float: right;
+    margin-right: 10px;
+  }
+
+  .usernav {
+    display: inline-block;
+    list-style: none;
+    margin: auto;
+    margin-top: 6px;
+    margin-right: 5px;
+  }
+
+  .usernav li {
+    font-size: 10px;
+  }
+
+  .profilename {
+    font-size: 14px;
+    margin-top: 1px;
+  }
+
+  .search-wrapper {
+    display: inline-block;
+  }
+
+  .left-container {
+    float: left;
+    width: 100%;
+  }
+
+  .right-container {
+    display: inline-block;
+    width: 25.4593%;
+    float: none;
+    margin-top: 30px;
+  }
+
+  .footerspan .fright {
+    float: right;
+    padding-top: 0px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .optionarea {
+    margin-right: 30px;
+  }
+
+  .optionarea li a {
+    font-size: 12px;
+  }
+
+  .optionarea {
+    padding: 10px;
+  }
+
+  .statusarea {
+    margin-top: 10px;
+    padding-left: 25px;
+  }
+
+  .statusarea li a {
+    font-size: 12px;
+  }
+
+  .left-container {
+    float: left;
+    width: 81.2366%;
+  }
+
+  .right-container {
+    float: right;
+    width: 18.7633%;
+    margin-top: 0;
+  }
+
+  .usernav {
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+
+  .usernav li a {
+    font-size: 14px;
+  }
+
+  .profilename {
+    font-size: 18px;
+  }
+}
