@@ -1,0 +1,675 @@
+/** -------- Hero ------------ **/
+
+/** -------- Header ------------ **/
+.hero-navbar {
+  margin-top: 2.5rem;
+  overflow: hidden;
+  margin-left: -0.8%;
+  margin-right: -0.4%;
+}
+
+.logo {
+  float: left;
+}
+
+#dropdown {
+  float: right;
+}
+
+.navbar {
+  display: none;
+}
+
+.navbar ul {
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  line-height: 4rem;
+}
+
+.navbar-item {
+  color: #1d1d1f;
+}
+
+.navbar-item:hover {
+  color: #06c167;
+}
+
+/** -------- Hero Content ------------ **/
+
+.hero-container {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-background {
+  width: 100%;
+  min-height: 932px;
+  background-color: #f3fcf7;
+}
+
+.hero-content {
+  margin-top: 6rem;
+}
+
+.hero-title {
+  font-size: 4.5rem;
+  font-weight: 500;
+  text-align: center;
+  color: #1d1d1f;
+}
+
+.hero-paragraph {
+  text-align: center;
+  font: 1.8rem bold;
+  color: #1d1d1f;
+  margin-top: 2.5rem;
+}
+
+.get-started {
+  font-size: 1.6rem;
+  width: 100%;
+  background-color: #06c167;
+  margin-top: 5.3rem;
+  border: 0;
+  padding-top: 2.4rem;
+  padding-bottom: 2.5rem;
+  color: #ffffff;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.hero-image-container {
+  position: relative;
+  margin-top: 4.7rem;
+  width: 100%;
+  height: 46.9rem;
+  overflow: hidden;
+}
+
+.hero-image {
+  height: 47.2rem;
+}
+
+.hero-ratings,
+.hero-quality-product {
+  background-color: #fff;
+  padding: 1.7rem 1.7rem 1.8rem 1.9rem;
+  border-radius: 10rem;
+  width: 23rem;
+}
+
+.ratings-text {
+  float: left;
+}
+
+.ratings-text,
+.quality-product-text {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #1d1d1f;
+}
+
+.hero-ratings {
+  position: absolute;
+  top: 354px;
+  left: 46px;
+  z-index: 1;
+}
+
+.hero-star {
+  float: right;
+}
+
+.hero-quality-product {
+  float: right;
+  position: absolute;
+  top: 417px;
+  left: 46px;
+  z-index: 1;
+  max-height: 5.3rem;
+  padding-left: 1rem;
+  padding-right: 1.6rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.hero-person-picture {
+  float: left;
+  padding-top: 0.7rem;
+  padding-bottom: 0.6rem;
+}
+
+.quality-product-text {
+  padding-top: 1.7rem;
+  padding-bottom: 1.8rem;
+  margin-left: 1rem;
+}
+
+.hero-polcadot {
+  position: absolute;
+  top: 34rem;
+  left: 19.4rem;
+}
+
+.brand-logos {
+  margin-top: 5.218rem;
+}
+
+.brand-one {
+  width: 12.3rem;
+  float: left;
+}
+
+.brand-two {
+  width: 11.8rem;
+  float: right;
+}
+
+.brand-three {
+  width: 11.9rem;
+  margin-top: 3rem;
+  margin-left: 31.25%;
+  margin-right: 31.25%;
+}
+
+/** -------- Features ------------ **/
+
+.features-container {
+  margin-top: 5.9rem;
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+  padding-top: 5.95rem;
+  padding-bottom: 5.95rem;
+  width: 100%;
+}
+
+.feature {
+  float: left;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-container {
+  height: 4.375rem;
+  width: 4.375rem;
+  background-color: #f3fcf7;
+  padding: 1.375rem 1.172rem;
+  border-radius: 10%;
+  position: relative;
+  margin: auto;
+}
+
+.feature-icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.feature-content {
+  margin-top: 2.1rem;
+  text-align: center;
+}
+
+.feature-group {
+  margin-top: 10.4rem;
+}
+
+.feature-title {
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #1d1d1f;
+}
+
+.feature-description {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #1d1d1f;
+  opacity: 0.75;
+  margin-top: 0.7rem;
+}
+
+/** -------- Benefits ------------ **/
+
+.benefits-container {
+  margin-top: 9.05rem;
+}
+
+.benefits-image-container {
+  position: relative;
+  height: 41.3rem;
+  background-color: #f0f1ec;
+}
+
+.benefits-image {
+  position: absolute;
+  top: -2.9rem;
+  left: 2.2rem;
+  width: 85.625%;
+  height: 41.7rem;
+}
+
+.benefits-content {
+  position: relative;
+  margin-top: 5.7rem;
+}
+
+.benefits-content h5 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #1d1d1f;
+  text-align: center;
+  margin-bottom: 1.3rem;
+}
+
+.benefits-polcadot {
+  position: absolute;
+  left: -1.3rem;
+  top: -0.5rem;
+  z-index: -1;
+}
+
+.benefits-title {
+  font-weight: 500;
+  text-align: center;
+  font-size: 3.5rem;
+  color: #1d1d1f;
+}
+
+.benefits-list {
+  margin-top: 5.2rem;
+  list-style-image: url("./../images/check.png");
+  margin-left: 0px;
+}
+
+.benefits-list-item {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #1d1d1f;
+  margin-left: 7rem;
+  padding-left: 2.2rem;
+  margin-bottom: 2.1rem;
+}
+
+/** -------- Stats ------------ **/
+
+.stats-container {
+  margin-top: 13.1rem;
+}
+
+.stats-image-container {
+  position: relative;
+  height: 46rem;
+  background-color: #f0f1ec;
+}
+
+.stats-image {
+  position: absolute;
+  top: -6.1rem;
+  left: 2.2rem;
+  width: 86.56%;
+  height: 48.9rem;
+}
+
+.stats-content {
+  margin-top: 3.5rem;
+  text-align: center;
+}
+
+.stats-content h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #1d1d1f;
+  margin-bottom: 1.3rem;
+}
+
+.stats-title {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #1d1d1f;
+  margin-bottom: 5.3rem;
+  line-height: 4.2rem;
+}
+
+.stats-box {
+  margin-bottom: 3.9rem;
+}
+
+.stats-numbers {
+  font-weight: 600;
+  font-size: 4rem;
+  color: #06c167;
+  line-height: 4.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.stats-detail {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #1d1d1f;
+  opacity: 0.65;
+  line-height: 1.8rem;
+}
+
+.special-promo {
+  margin-top: 2.7rem;
+}
+
+/** -------- Features Details ------------ **/
+
+.features-details-container {
+  margin-top: 12.9rem;
+}
+
+.features-details-container h5 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #1d1d1f;
+  text-align: center;
+  margin-bottom: 1.3rem;
+}
+
+.features-details-title {
+  font-weight: 500;
+  text-align: center;
+  font-size: 3.5rem;
+  color: #1d1d1f;
+  margin-bottom: 6.5rem;
+}
+
+.features-details-image {
+  margin-left: 4.22%;
+  margin-right: 4.22%;
+  width: 91.56%;
+}
+
+.first-feature-image {
+  width: 100%;
+  height: 29.3rem;
+  margin: 0;
+}
+
+.features-details-description {
+  height: 29.3rem;
+  background-color: #f0f1ec;
+  border: 1.5px solid #06c167;
+}
+
+.features-details-description:hover {
+  background-color: #fff;
+}
+.features-details-description-title {
+  font-size: 3.2rem;
+  line-height: 3.9rem;
+  font-weight: 500;
+  color: #1d1d1f;
+  padding-top: 3.75rem;
+  padding-left: 11.875%;
+  padding-right: 16.875%;
+}
+
+.features-details-description-content {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-weight: normal;
+  color: #1d1d1f;
+  padding-top: 2.5rem;
+  padding-left: 11.875%;
+  padding-right: 16.875%;
+}
+
+.discover-now {
+  border: 0;
+  margin-top: 3.75rem;
+  margin-left: 11.875%;
+  margin-right: 16.875%;
+  background-color: #f0ede2;
+  height: 4.2rem;
+  font-size: 1.5rem;
+  color: #06c167;
+  font-weight: 500;
+  line-height: 1.8rem;
+  padding: 1.2rem;
+  cursor: pointer;
+}
+
+.discover-now-icon {
+  margin-left: 0.2rem;
+  width: 1.2rem;
+}
+
+/** -------- Popular Products ------------ **/
+
+.popular-products-container {
+  margin-top: 12.9rem;
+}
+
+.popular-products-container h5 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #1d1d1f;
+  text-align: center;
+  margin-bottom: 1.3rem;
+}
+
+.popular-product-title {
+  font-weight: 500;
+  text-align: center;
+  font-size: 3.5rem;
+  color: #1d1d1f;
+  margin-bottom: 7rem;
+}
+
+.popular-product-container {
+  height: 44.5rem;
+  width: 100%;
+  border: 2px solid #767675;
+  text-align: center;
+  margin-bottom: 3.8rem;
+}
+
+.popular-product-container:hover {
+  background-color: #f2f7f4;
+}
+
+.popular-product-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+}
+
+.popular-products-star {
+  margin-top: 0.5rem;
+}
+
+.popular-product-container-title {
+  margin-top: 2.1rem;
+  color: #1d1d1f;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+}
+
+.popular-product-price {
+  margin-top: 2.5rem;
+  color: #06c167;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+.popular-product-price strike {
+  color: #767675;
+  opacity: 0.35;
+  font-weight: 600;
+}
+
+.buy-now {
+  margin-top: 3rem;
+  margin-right: 2rem;
+  border: 2px solid #06c167;
+  padding-top: 1.7rem;
+  padding-bottom: 1.9rem;
+  padding-left: 16.949%;
+  padding-right: 14.124%;
+  color: #06c167;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.buy-now:hover {
+  background-color: #c0d8c8;
+}
+
+/** -------- Veggie ------------ **/
+
+.veggie-container {
+  position: relative;
+  overflow-x: hidden;
+  margin-top: 6.8rem;
+  height: 459px;
+}
+
+.veggie-background-image {
+  position: absolute;
+  top: 0;
+  left: -30rem;
+  z-index: -1;
+  max-width: none;
+}
+
+.veggie-content {
+  width: 91.562%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10.2rem;
+}
+
+.veggie-title {
+  text-align: center;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 4.2rem;
+  margin-top: 0;
+}
+
+/** -------- Footer ------------ **/
+
+.footer-container {
+  margin-top: 9.5rem;
+}
+
+.footer-logo-part {
+  text-align: center;
+  cursor: pointer;
+}
+
+.footer-content {
+  padding-top: 3.9rem;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
+  padding-bottom: 3.66rem;
+  justify-content: center;
+  color: #1d1d1f;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 2.42rem;
+}
+
+.facebook,
+.instagram {
+  margin-right: 2.5rem;
+}
+
+.facebook,
+.instagram,
+.twitter {
+  cursor: pointer;
+}
+
+.footer-about-us {
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.footer-title {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: #1d1d1f;
+  margin-bottom: 4.1rem;
+}
+
+.footer-link {
+  display: block;
+  color: #1d1d1f;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  padding-bottom: 1.6rem;
+}
+
+.footer-company {
+  margin-top: 6.4rem;
+  text-align: center;
+}
+
+.get-in-touch {
+  margin-top: 6.4rem;
+  text-align: center;
+}
+
+.get-in-touch-content {
+  padding-top: 0;
+  justify-content: center;
+  color: #1d1d1f;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+  margin-bottom: 3.9rem;
+}
+
+.email {
+  border: 0;
+  width: 100%;
+  background-color: #f0f1ec;
+  text-align: center;
+  padding-top: 1.8rem;
+  padding-bottom: 1.9rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  color: #1d1d1f;
+  opacity: 0.7;
+}
+
+.subscribe {
+  border: 0;
+  width: 100%;
+  background-color: #06c167;
+  padding-top: 1.6rem;
+  padding-bottom: 1.7rem;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.copyright {
+  margin-top: 8.1rem;
+  margin-bottom: 3.1rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.9rem;
+  color: #1d1d1f;
+}

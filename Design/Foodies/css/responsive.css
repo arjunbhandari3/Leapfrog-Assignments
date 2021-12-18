@@ -1,0 +1,381 @@
+@media (min-width: 512px) {
+  .hero-image {
+    width: 100%;
+    height: 47.2rem;
+    position: relative;
+  }
+
+  .hero-ratings {
+    float: right;
+    position: absolute;
+    top: 33rem;
+    left: 18rem;
+    z-index: 1;
+  }
+
+  .hero-quality-product {
+    position: absolute;
+    margin-top: 4.7rem;
+    top: 36rem;
+    left: 18rem;
+    z-index: 1;
+  }
+
+  .hero-polcadot {
+    position: absolute;
+    top: 31rem;
+    left: 28rem;
+  }
+}
+
+@media (min-width: 700px) {
+  body {
+    margin-left: 9.5%;
+    margin-right: 9.6=5%;
+  }
+
+  #dropdown {
+    display: none;
+    visibility: hidden;
+  }
+
+  .navbar {
+    display: block;
+    float: right;
+    max-width: 90%;
+    margin-top: -5rem;
+    background-color: #fff;
+  }
+
+  .navbar li {
+    display: inline-block;
+  }
+
+  .navbar-item {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #1d1d1f;
+    margin-left: 3rem;
+  }
+
+  .navbar-item:hover {
+    color: #06c167;
+  }
+
+  .hero-background {
+    top: -30rem;
+    left: -12%;
+    z-index: -2;
+    width: 123.5%;
+  }
+
+  .hero-image {
+    width: 46.8rem;
+    height: 63.4rem;
+  }
+
+  .hero-content {
+    float: left;
+    width: 45.55%;
+  }
+
+  .hero-title {
+    width: 100%;
+    font-size: 7.5rem;
+    line-height: 9.1rem;
+    text-align: start;
+  }
+
+  .hero-paragraph {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    text-align: start;
+  }
+
+  .get-started {
+    max-width: 50%;
+  }
+
+  .hero-image-container {
+    float: right;
+    width: 40%;
+    margin-right: 3.58%;
+    overflow: inherit;
+  }
+
+  .hero-ratings {
+    top: 60%;
+    left: -19%;
+    z-index: 1;
+  }
+
+  .hero-polcadot {
+    top: 96%;
+    left: 71.15%;
+  }
+
+  .hero-quality-product {
+    top: 32%;
+    left: 59.82%;
+  }
+
+  .header:after {
+    clear: both;
+    display: table;
+    content: "";
+  }
+
+  .brand-logos {
+    margin-top: 8rem;
+    width: 50%;
+    margin-bottom: 20rem;
+  }
+
+  .brand-one {
+    width: 12.3rem;
+    float: left;
+  }
+
+  .brand-two {
+    width: 11.8rem;
+    float: left;
+    margin-left: 5%;
+  }
+
+  .brand-three {
+    float: left;
+    width: 11.9rem;
+    margin-top: -3rem;
+    margin-left: 80%;
+  }
+
+  .feature {
+    width: 25%;
+  }
+
+  .feature-group {
+    content: "";
+    clear: none;
+    display: block;
+    margin-top: 0;
+  }
+
+  .feature-row-2 {
+    margin: 0;
+  }
+
+  .benefits-container {
+    margin-top: 13rem;
+  }
+
+  .benefits-container:after {
+    clear: both;
+    display: table;
+    content: "";
+  }
+
+  .benefits-image-container {
+    height: 60.8rem;
+    background-color: #f0f1ec;
+    width: 46.23%;
+    float: left;
+  }
+
+  .benefits-image {
+    width: 82.25%;
+    height: 51.3rem;
+    top: 0;
+    left: 8.87%;
+  }
+
+  .benefits-content {
+    float: right;
+    width: 45.89%;
+  }
+
+  .benefits-title,
+  .stats-container-title,
+  .features-details-title,
+  .popular-product-title {
+    font-size: 6rem;
+    line-height: 7.3rem;
+    color: #1d1d1f;
+    font-weight: 500;
+  }
+
+  .stats-container {
+    margin-top: 20rem;
+  }
+
+  .stats-container:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+
+  .stats-image-container {
+    float: right;
+    width: 46.24%;
+    height: 60.8rem;
+    background-color: #f0f1ec;
+  }
+
+  .stats-image {
+    width: 82.25%;
+    height: 51.3rem;
+    top: 0;
+    left: 17.744%;
+  }
+
+  .stats-content {
+    float: left;
+    width: 48.71%;
+  }
+
+  .stats-box {
+    float: left;
+    padding-right: 10%;
+  }
+
+  .special-promo {
+    clear: both;
+    display: table;
+    content: "";
+    width: 50%;
+  }
+
+  .features-details-container {
+    margin-top: 19.7rem;
+  }
+
+  .features-details-image,
+  .features-details-description {
+    width: 24.85%;
+    height: 29.25rem;
+    margin: 0;
+  }
+
+  .features-row-1 .features-details-image,
+  .features-row-1 .features-details-description {
+    float: left;
+  }
+
+  .features-row-2 .features-details-image,
+  .features-row-2 .features-details-description {
+    float: right;
+  }
+
+  .features-details-description-title {
+    padding-top: 1.5rem;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .features-details-description-content {
+    padding-top: 1.9rem;
+  }
+
+  .discover-now {
+    margin-top: 1rem;
+  }
+
+  .features-details-container:after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+
+  .popular-products-container:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+
+  .popular-product-container {
+    width: 23%;
+    float: left;
+    margin-left: 2%;
+  }
+
+  .first-product {
+    margin-left: 0;
+  }
+
+  .veggie-container {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 15rem;
+    overflow-y: hidden;
+  }
+
+  .veggie-background-image {
+    width: 100%;
+    min-height: 30rem;
+    height: auto;
+    left: 0;
+    top: 0;
+  }
+
+  .veggie-title {
+    font-size: 6rem;
+    line-height: 6.2rem;
+  }
+
+  .veggie-button {
+    margin-top: 2rem;
+    width: 25%;
+  }
+
+  .veggie-content {
+    text-align: center;
+  }
+
+  .footer-container {
+    margin-top: 10rem;
+  }
+
+  .footer-logo-part {
+    width: 25%;
+    float: left;
+    margin-bottom: 9rem;
+    margin-right: 4%;
+    text-align: start;
+  }
+
+  .footer-content {
+    padding-left: 0;
+  }
+
+  .footer-about-us {
+    width: 20%;
+    float: left;
+    margin-bottom: 9rem;
+    margin-top: 0;
+    margin-right: 2%;
+    text-align: start;
+  }
+
+  .footer-company {
+    width: 20%;
+    float: left;
+    margin-bottom: 9rem;
+    margin-top: 0;
+    margin-right: 4%;
+    text-align: start;
+  }
+
+  .get-in-touch {
+    width: 25%;
+    float: right;
+    margin-bottom: 9rem;
+    margin-top: 0;
+    text-align: start;
+  }
+
+  .copyright {
+    display: block;
+    clear: both;
+    content: "";
+    width: 100%;
+  }
+}
