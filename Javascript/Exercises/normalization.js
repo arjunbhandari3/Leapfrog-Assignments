@@ -22,20 +22,18 @@ function normalize(input) {
   var output = {};
 
   function children(childrenArray) {
-    childrenArray.forEach(function (ojectValue) {
+    childrenArray.forEach((objectValue) => {
       var normalizedObj = {};
-      normalizedObj["id"] = ojectValue.id;
-      normalizedObj["name"] = ojectValue.name;
+      normalizedObj["id"] = objectValue.id;
+      normalizedObj["name"] = objectValue.name;
 
-      output[ojectValue.id] = normalizedObj;
+      output[objectValue.id] = normalizedObj;
 
-      if (ojectValue.children) {
-        output[ojectValue.id]["children"] = ojectValue.children.map(function (
-          child
-        ) {
-          return child.id;
-        });
-        children(ojectValue.children);
+      if (objectValue.children) {
+        output[objectValue.id]["children"] = objectValue.children.map(
+          (child) => child.id
+        );
+        children(objectValue.children);
       }
     });
   }
