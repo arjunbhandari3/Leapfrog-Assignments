@@ -38,20 +38,40 @@ thead {
 
 td {
   font-size: 18px;
-  padding: 18px 40px 18px 40px;
+  padding: 15px 20px;
 }
 
 .header-wrapper {
-  margin-bottom: 25px;
+  margin: 20px;
   text-align: center;
+}
+
+.profile-image {
+  float: left;
+  left: 50%;
+}
+
+.header-text {
+  float: left;
+  right: 50%;
+  margin: 1rem;
+  text-align: left;
 }
 
 .button-demo {
   background-color: #4922e6;
 }
 
+.button-demo:hover {
+  background-color: #22a5e6;
+}
+
 .button-code {
   background-color: #34db3f;
+}
+
+.button-code:hover {
+  background-color: #c6db3e;
 }
 
 .button {
