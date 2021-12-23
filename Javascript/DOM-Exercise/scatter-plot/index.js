@@ -1,7 +1,7 @@
 var container = document.getElementById("container");
 
 container.style.width = "600px";
-container.style.height = "600px";
+container.style.height = "400px";
 container.style.background = "#ececec";
 container.style.position = "relative";
 container.style.margin = "50px 200px";
@@ -22,27 +22,16 @@ function plot(x, y) {
   point.style.borderRadius = "50%";
 
   point.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    point.style.background = "red";
     point.style.width = "24px";
     point.style.height = "24px";
   });
 
   point.addEventListener("dblclick", (e) => {
-    e.preventDefault();
-
-    point.style.background = "blue";
-    point.style.width = "12px";
-    point.style.height = "12px";
+    point.remove();
   });
 
   point.addEventListener("mouseover", (e) => {
-    e.preventDefault();
-
     point.style.background = "purple";
-    point.style.width = "24px";
-    point.style.height = "24px";
   });
 }
 
