@@ -7,13 +7,14 @@ parent.style.position = "relative";
 parent.style.margin = "50px 200px";
 
 class Ball {
-  constructor(x, y) {
+  constructor(x, y, color) {
     this.x = x;
     this.y = y;
+    this.color = color;
 
     this.ball = document.createElement("div");
 
-    this.ball.style.background = "blue";
+    this.ball.style.backgroundColor = this.color;
     this.ball.style.width = "50px";
     this.ball.style.height = "50px";
     this.ball.style.borderRadius = "25px";
@@ -44,9 +45,9 @@ class Ball {
   }
 }
 
-new Ball(50, 0);
-new Ball(200, 100);
-new Ball(400, 400);
-new Ball(600, 300);
-new Ball(800, 500);
-new Ball(1000, 200);
+new Ball(50, 0, "blue");
+new Ball(200, 100, "red");
+new Ball(400, 400, "green");
+new Ball(600, 300, "yellow");
+new Ball(800, 500, "purple");
+new Ball(1000, 200, "orange");
