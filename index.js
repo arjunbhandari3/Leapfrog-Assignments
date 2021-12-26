@@ -65,6 +65,12 @@ let tasks = [
     code: "https://github.com/arjunbhandari3/Leapfrog-Assignments/tree/master/Javascript/Assignments/ast1",
     demo: "https://arjunbhandari3.github.io/Leapfrog-Assignments/Javascript/Assignments/ast1/",
   },
+  {
+    id: 12,
+    title: "JS Assignment 1: Image Carousel with Hold Time",
+    code: "https://github.com/arjunbhandari3/Leapfrog-Assignments/tree/master/Javascript/Assignments/ast2",
+    demo: "https://arjunbhandari3.github.io/Leapfrog-Assignments/Javascript/Assignments/ast2/",
+  },
 ];
 
 const createRow = ({ id, title, code, demo }) => `
