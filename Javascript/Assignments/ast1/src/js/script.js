@@ -30,10 +30,6 @@ carouselContainer.appendChild(indicatorDots);
 indicatorDots.className = "indicator-dots-wrapper";
 indicatorDots.style.position = "absolute";
 
-function setActiveIndicatorDot() {
-  indicatorDots.children[imageIndex].style.color = "white";
-}
-
 for (let i = 0; i < numberOfImages; i++) {
   const indicatorDot = document.createElement("div");
   indicatorDots.appendChild(indicatorDot);
@@ -48,7 +44,6 @@ for (let i = 0; i < numberOfImages; i++) {
   indicatorDot.style.margin = "5px";
   indicatorDot.style.cursor = "pointer";
   indicatorDot.style.display = "inline-block";
-  indicatorDots.appendChild(indicatorDot);
 
   indicatorDots.style.top = `${
     IMAGE_HEIGHT - parseInt(indicatorDot.style.width) * 2
