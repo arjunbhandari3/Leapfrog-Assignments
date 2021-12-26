@@ -59,6 +59,12 @@ let tasks = [
     code: "https://github.com/arjunbhandari3/Leapfrog-Assignments/tree/master/Javascript/DOM-Exercise/bounce-ball-OOP",
     demo: "https://arjunbhandari3.github.io/Leapfrog-Assignments/Javascript/DOM-Exercise/bounce-ball-OOP/",
   },
+  {
+    id: 11,
+    title: "JS Assignment 1: Image Carousel",
+    code: "https://github.com/arjunbhandari3/Leapfrog-Assignments/tree/master/Javascript/Assignments/ast1",
+    demo: "https://arjunbhandari3.github.io/Leapfrog-Assignments/Javascript/Assignments/ast1/",
+  },
 ];
 
 const createRow = ({ id, title, code, demo }) => `
