@@ -127,7 +127,7 @@ leftArrow.addEventListener("click", () => {
     imageIndex = numberOfImages - 1;
     prevTimer = setInterval(() => {
       dx += step;
-      carouselImageWrapper.style.left = `${dx}px`;
+      carouselImageWrapper.style.left = `-${dx}px`;
 
       if (dx >= imageIndex * IMAGE_WIDTH) {
         clearInterval(prevTimer);
