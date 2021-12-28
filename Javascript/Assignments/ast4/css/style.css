@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.player-car,
+.opponent-car {
+  position: absolute;
+  z-index: 10;
+}
+
+body {
+  background-color: black;
+}
+
+.car-game {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  width: 704px;
+  margin: auto;
+}
+
+.score-container,
+.new-game,
+.menu-button {
+  position: absolute;
+  z-index: 10;
+  font-size: 16px;
+  font-weight: 900;
+  padding: 5px;
+  min-width: 140px;
+}
+
+.score-container {
+  color: red;
+  background-color: black;
+}
+
+.new-game,
+.menu-button {
+  color: white;
+  background-color: red;
+  cursor: pointer;
+}
+
+.new-game:hover,
+.menu-button:hover {
+  color: white;
+  background-color: black;
+}
+
+.score-container {
+  top: 30px;
+  left: 6px;
+}
+
+.new-game {
+  top: 30px;
+  right: 6px;
+}
+
+.menu-button {
+  top: 80px;
+  right: 6px;
+}
+
+.high-score {
+  padding-top: 10px;
+}
+
+.game-over {
+  position: absolute;
+  color: red;
+  z-index: 10;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  background-color: black;
+  padding: 10px 20px;
+  left: 31.9091%;
+  top: 150px;
+}
