@@ -83,6 +83,12 @@ let tasks = [
     code: "https://github.com/arjunbhandari3/Leapfrog-Assignments/tree/master/Javascript/Assignments/ast3-ant-smasher",
     demo: "https://arjunbhandari3.github.io/Leapfrog-Assignments/Javascript/Assignments/ast3-ant-smasher/",
   },
+  {
+    id: 15,
+    title: "Car Lane Game",
+    code: "https://github.com/arjunbhandari3/Leapfrog-Assignments/tree/master/Javascript/Assignments/ast4",
+    demo: "https://arjunbhandari3.github.io/Leapfrog-Assignments/Javascript/Assignments/ast4/",
+  },
 ];
 
 const createRow = ({ id, title, code, demo }) => `
