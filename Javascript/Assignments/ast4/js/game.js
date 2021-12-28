@@ -6,10 +6,6 @@ const MAX_SPEED = 100;
 const SPEED_INCREMENT = 2;
 const SPEED_INCREMENT_INTERVAL = 10;
 
-// function generateRandomValue(min, max) {
-//   return Math.floor(Math.random() * (max - min)) + min;
-// }
-
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
@@ -336,5 +332,4 @@ class Game {
   }
 }
 
-//  container-id, speed
 new Game("game", 5);
