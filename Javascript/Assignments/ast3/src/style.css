@@ -1,0 +1,16 @@
+* {
+  padding: 0 px;
+  margin: 0 px;
+}
+
+#main-container {
+  width: 1000px;
+  height: 600px;
+  border: solid 3px red;
+  margin: auto;
+  position: relative;
+}
+
+.ball {
+  position: absolute;
+}
