@@ -52,11 +52,11 @@ class Game {
 
   createMenuHeader() {
     const menuHeader = document.createElement("h1");
-    menuHeader.innerText = "Car Lane Game";
+    menuHeader.innerText = "Car Lane Game with Bullet Implementation";
     menuHeader.style.textTransform = "uppercase";
     menuHeader.style.color = "red";
     menuHeader.style.fontFamily = "Arial, Helvetica, sans-serif";
-    menuHeader.style.fontSize = "70px";
+    menuHeader.style.fontSize = "45px";
     menuHeader.style.fontWeight = "900";
     menuHeader.style.textAlign = "center";
     menuHeader.style.paddingTop = "50px";
