@@ -26,7 +26,7 @@ class Car {
   createPlayerCar() {
     this.carElement.classList.add("player-car");
     this.carElement.style.left = this.xPosition + "px";
-    this.yPosition = 464;
+    this.yPosition = 600;
     this.carElement.style.top = this.yPosition + "px";
     this.carElement.style.background = "url(images/mycar.png) no-repeat";
     this.carElement.style.backgroundSize = "contain";
@@ -65,7 +65,7 @@ class Car {
   }
 
   moveOpponent() {
-    this.yPosition += 10;
+    this.yPosition += 8;
     this.drawOpponent();
   }
 

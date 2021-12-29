@@ -210,10 +210,10 @@ class Game {
     const road = document.createElement("div");
     road.classList.add("road");
     road.style.width = "704px";
-    road.style.height = "1300px";
+    road.style.height = "1496px";
     road.style.background = "url(images/road.png) no-repeat";
     road.style.position = "absolute";
-    road.style.top = "-640px";
+    road.style.top = "-600px";
     this.parentElement.appendChild(road);
   }
 
@@ -222,7 +222,7 @@ class Game {
     this.roadTop += this.speed;
     this.road.style.top = this.roadTop + "px";
     if (this.roadTop >= 0) {
-      this.roadTop = -640;
+      this.roadTop = -560;
     }
   }
 
