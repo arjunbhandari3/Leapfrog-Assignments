@@ -48,12 +48,10 @@ body {
 
 #play {
   position: absolute;
-  background: url("../images/play.png") no-repeat;
   background-size: contain;
-  height: 55px;
-  width: 150px;
-  bottom: 80px;
-  left: 50px;
+  height: 70px;
+  width: 220px;
+  top: 250px;
 }
 
 #score {
@@ -83,15 +81,16 @@ body {
   background-size: contain;
   height: 50px;
   width: 210px;
-  top: 100px;
+  top: 60px;
 }
+
 .gameover-bar {
   position: absolute;
   background: url("../images/medalbox.png") no-repeat;
   background-size: contain;
   height: 150px;
   width: 210px;
-  top: 200px;
+  top: 120px;
 }
 
 #score-point,

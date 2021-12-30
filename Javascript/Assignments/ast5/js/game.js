@@ -8,39 +8,40 @@ class Game {
     this.scorePointD = document.getElementById("score-point");
     this.highScoreD = document.getElementById("high-score");
     this.playButton = document.getElementById("play");
+    this.bird = document.getElementById("bird");
 
     this.final.style.display = "none";
     this.gameScreen.style.backgroundPositionY = "500px";
+    this.bird.style.display = "none";
     this.gameScreen.style.backgroundPositionX = "0px";
-    this.getReady.style.background = "url('../images/message.png') no-repeat";
+    this.getReady.style.background = "url('images/message.png') no-repeat";
   }
 
   initialize() {
+    this.playButton.style.display = "none";
     document.addEventListener("click", handleEvent);
-    document.addEventListener("keyup", (evt) =>
-      evt.keyCode === 32 ? handleEvent(evt) : ""
+    document.addEventListener("keyup", (event) =>
+      event.code === "Space" ? handleEvent() : ""
     );
 
-    function handleEvent(e) {
-      if (e || e.keyCode === 32) {
-        switch (playingState) {
-          case "menu":
-            release = true;
-            playingState = "game";
-            break;
-          case "game":
-            bird.fall(-0.05);
-            break;
-        }
+    function handleEvent() {
+      switch (playingState) {
+        case "menu":
+          release = true;
+          playingState = "game";
+          break;
+        case "game":
+          bird.fall(-0.05);
+          break;
       }
     }
+
     this.playButton.addEventListener("click", () => {
       if (playingState == "menu") {
         bird.fall(-0.05);
         playingState = "game";
         release = true;
       } else if (playingState == "gameover") {
-        bird.bird.style.display = "block";
         score = 0;
         scoreElement.innerText = "";
         playingState = "menu";
@@ -48,13 +49,15 @@ class Game {
     });
   }
 
-  bgAnimate(changebg) {
+  backgroundAnimate(changebg) {
+    this.bird.style.display = "block";
     bird.fall(0.1);
     this.getReady.style.display = "none";
-    parseInt(this.gameScreen.style.backgroundPositionX) >= 1000
-      ? (this.gameScreen.style.backgroundPositionX = "0px")
-      : (this.gameScreen.style.backgroundPositionX =
-          parseInt(this.gameScreen.style.backgroundPositionX) + 3 + "px");
+    this.gameScreen.style.backgroundPositionX =
+      parseInt(this.gameScreen.style.backgroundPositionX) + "px";
+    if (parseInt(this.gameScreen.style.backgroundPositionX) < -500) {
+      this.gameScreen.style.backgroundPositionX = "0px";
+    }
   }
 
   collision(bird, pipes) {
@@ -111,7 +114,10 @@ class Game {
       this.highScoreD.innerText = highScore;
       this.getReady.style.display = "block";
       this.final.style.display = "block";
+      this.playButton.style.background = "url('images/restart.png') no-repeat";
       this.getReady.style.background = "none";
+      this.bird.style.display = "none";
+
       pipesCount.forEach((pipe) => {
         pipe.pipes.remove();
       });
@@ -123,6 +129,7 @@ class Game {
     bird.bird.className = "normal";
     bird.bird.style.display = "none";
     this.playButton.style.display = "block";
+    this.playButton.style.background = "url('images/restart.png') no-repeat";
     playingState = "gameover";
   }
 }
@@ -136,8 +143,8 @@ let pipesCount = [];
 let release = true;
 let maxPipe = 3;
 let backgroundImages = [
-  "url('../images/background-day.png')",
-  "url('../images/background-night.png')",
+  "url('images/background-day.png')",
+  "url('images/background-night.png')",
 ];
 let scoreElement = document.getElementById("score");
 let gameContainer = new Game();
@@ -168,7 +175,7 @@ let game = () => {
         gameContainer.collision(bird, pipe);
       }
     });
-    gameContainer.bgAnimate("toggle");
+    gameContainer.backgroundAnimate("toggle");
   } else if (playingState == "menu" || playingState == "gameover") {
     gameContainer.show();
   }
