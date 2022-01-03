@@ -82,6 +82,5 @@ class Helix {
   }
 }
 
-let helix = new Helix("helix-container", 20, 15, 10);
-
+let helix = new Helix("helix-container", 30, 15, 10);
 helix.animate();
