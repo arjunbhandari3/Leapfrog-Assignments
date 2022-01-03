@@ -101,6 +101,12 @@ let tasks = [
     code: "https://github.com/arjunbhandari3/Leapfrog-Assignments/tree/master/Javascript/Assignments/ast5",
     demo: "https://arjunbhandari3.github.io/Leapfrog-Assignments/Javascript/Assignments/ast5/",
   },
+  {
+    id: 18,
+    title: "Helix Animation",
+    code: "https://github.com/arjunbhandari3/Leapfrog-Assignments/tree/master/Javascript/Assignments/ast6",
+    demo: "https://arjunbhandari3.github.io/Leapfrog-Assignments/Javascript/Assignments/ast6/",
+  },
 ];
 
 const createRow = ({ id, title, code, demo }) => `
