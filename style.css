@@ -5,15 +5,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: #22272e;
   font-family: "Poppins", sans-serif;
   color: white;
-  display: grid;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  margin: 35px auto;
 }
 
 h1,
@@ -25,24 +27,30 @@ h3 {
 
 img {
   border-radius: 50%;
+  width: 200px;
+  height: 200px;
 }
 
 table {
   border: 3px solid rgb(242, 238, 240);
-  padding: 12px;
+  padding: auto;
+  margin: auto;
+  min-width: 80%;
 }
 
 thead {
-  font: bold 20px;
+  font: bold 1.125em;
 }
 
 td {
-  font-size: 18px;
-  padding: 15px 20px;
+  font-size: 1.125em;
+  padding: 0.9375em 1.25em;
+  text-align: left;
 }
 
 .header-wrapper {
-  margin: 20px;
+  display: flex;
+  margin: 1.25em;
   text-align: center;
 }
 
@@ -52,10 +60,16 @@ td {
 }
 
 .header-text {
-  float: left;
+  float: right;
   right: 50%;
-  margin: 1rem;
+  margin: 1em;
   text-align: left;
+}
+
+.table-wrapper {
+  margin: auto;
+  text-align: center;
+  min-width: 400px;
 }
 
 .button-demo {
@@ -76,11 +90,11 @@ td {
 
 .button {
   border: none;
-  padding: 12px 28px;
+  padding: 0.75rem 1.75rem;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
   border-radius: 8%;
-  font-size: 18px;
+  font-size: 1.125em;
   color: white;
 }

@@ -107,6 +107,12 @@ let tasks = [
     code: "https://github.com/arjunbhandari3/Leapfrog-Assignments/tree/master/Javascript/Assignments/ast6",
     demo: "https://arjunbhandari3.github.io/Leapfrog-Assignments/Javascript/Assignments/ast6/",
   },
+  {
+    id: 19,
+    title: "Final Project: Candy Crush",
+    code: "https://github.com/arjunbhandari3/Leapfrog-Assignments/tree/master/Javascript/Candy Crush",
+    demo: "https://arjunbhandari3.github.io/Leapfrog-Assignments/Javascript/Candy Crush/",
+  },
 ];
 
 const createRow = ({ id, title, code, demo }) => `
