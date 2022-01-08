@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candy Crush</title>
+    <link rel="shortcut icon" type="image/png" href="images/bomb.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="start-screen">
+        <img id="start-background" src="images/start-background.jpg" />
+        <!-- <img id="start-mobile-background" src="images/mobile-start-bg.jpg" /> -->
+        <img id="play" src="images/play.png" />
+      </div>
+      <div id="game-container">
+        <div class="header">
+          <h1 class="title">Candy Crush</h1>
+          <div class="header-button">
+            <audio id="background-music" loop>
+              <source
+                src="sounds/background-music.mp3"
+                type="audio/mpeg"
+                preload="auto"
+              />
+            </audio>
+            <button
+              id="play-music"
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+            ></button>
+          </div>
+        </div>
+
+        <div class="game-content">
+          <div class="side-content">
+            <div class="side-info">
+              <span>Target</span>
+              <div id="target">1000</div>
+            </div>
+            <div class="side-info">
+              <span>Moves</span>
+              <div id="moves">40</div>
+            </div>
+            <div class="side-info">
+              <span>Score </span>
+              <div id="score">0</div>
+            </div>
+          </div>
+
+          <div class="game-board">
+            <canvas id="canvas"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/constants.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/candy.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
