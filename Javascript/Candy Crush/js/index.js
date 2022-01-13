@@ -2,8 +2,11 @@ var game;
 
 playButton.addEventListener("click", () => {
   startScreen.style.display = "none";
-  gameContainer.style.display = "block";
+  playButton.style.display = "none";
+  levelScreen.style.display = "block";
+  gameContainer.style.display = "none";
   backgroundMusic.play();
-  playMusicButton.style.backgroundImage = "url(images/unmute.png)";
-  game = new Game(100, 20, 8, 8);
+
+  // Game(target, moves, rows, columns)
+  game = new Game(150, 20, 8, 8, "move");
 });

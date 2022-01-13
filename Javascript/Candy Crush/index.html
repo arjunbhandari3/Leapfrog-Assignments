@@ -15,8 +15,13 @@
         <!-- <img id="start-mobile-background" src="images/mobile-start-bg.jpg" /> -->
         <img id="play" src="images/play.png" />
       </div>
+      <div id="level-screen">
+        <img id="level-background" src="images/level-background.jpg" />
+        <h1 id="level">Level <span></span></h1>
+      </div>
       <div id="game-container">
         <div class="header">
+          <h1 id="level-header">Level <span></span></h1>
           <h1 class="title">Candy Crush</h1>
           <div class="header-button">
             <audio id="background-music" loop>
@@ -37,30 +42,54 @@
 
         <div class="game-content">
           <div class="side-content">
-            <div class="side-info">
-              <span>Target</span>
-              <div id="target">1000</div>
+            <div>
+              <div class="side-info">
+                <span>High Score</span>
+                <div id="high-score"></div>
+              </div>
+              <div class="side-info">
+                <span>Target</span>
+                <div id="target"></div>
+              </div>
             </div>
-            <div class="side-info">
-              <span>Moves</span>
-              <div id="moves">40</div>
-            </div>
-            <div class="side-info">
-              <span>Score </span>
-              <div id="score">0</div>
+            <div>
+              <div id="time-container" class="side-info">
+                <span>Time</span>
+                <div id="time-left">0: <span>59</span></div>
+              </div>
+              <div id="move-container" class="side-info">
+                <span>Moves</span>
+                <div id="moves"></div>
+              </div>
+              <div class="side-info">
+                <span>Score </span>
+                <div id="score"></div>
+              </div>
             </div>
           </div>
 
           <div class="game-board">
             <canvas id="canvas"></canvas>
           </div>
+          <div id="game-over-screen">
+            <img id="moves-finished" src="images/out_of_moves.png" />
+            <img id="retry" src="images/retry.png" />
+          </div>
+
+          <div id="level-completed-screen">
+            <img id="level-completed" src="images/level_completed.png" />
+            <img id="next" src="images/play.png" />
+          </div>
         </div>
       </div>
     </div>
 
     <script src="js/constants.js"></script>
-    <script src="js/events.js"></script>
     <script src="js/candy.js"></script>
+    <script src="js/level.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/swap.js"></script>
+    <script src="js/crush.js"></script>
     <script src="js/game.js"></script>
     <script src="js/index.js"></script>
   </body>

@@ -1,17 +1,40 @@
 // HTML elements constants
+
+//start screen elements
 const startScreen = document.getElementById("start-screen");
 const startBackground = document.getElementById("start-background");
 const playButton = document.getElementById("play");
+
+const levelScreen = document.getElementById("level-screen");
+const levelBackground = document.getElementById("level-background");
+const levelContainer = document.querySelector("#level span");
+
+// game screen elements
 const gameContainer = document.getElementById("game-container");
 const backgroundMusic = document.getElementById("background-music");
 const playMusicButton = document.getElementById("play-music");
+const gameOverScreen = document.getElementById("game-over-screen");
+const retryButton = document.getElementById("retry");
+const levelCompleted = document.getElementById("level-completed-screen");
+const nextButton = document.getElementById("next");
+
+// game info elements
+const moveBoard = document.getElementById("move-container");
+const timeBoard = document.getElementById("time-container");
+const scoreContainer = document.getElementById("score");
+const movesContainer = document.getElementById("moves");
+const targetContainer = document.getElementById("target");
+const highScoreContainer = document.getElementById("high-score");
+const timeLeftContainer = document.querySelector("#time-left span");
+const levelHeader = document.querySelector("#level-header span");
 
 // Grid and Candy Constants
-const CANDY_WIDTH = 40;
-const CANDY_HEIGHT = 40;
-const GRID_WIDTH = 50;
-const GRID_HEIGHT = 50;
-const CANDY_PADDING = 5;
+const CANDY_WIDTH = 45;
+const CANDY_HEIGHT = 45;
+const GRID_WIDTH = 60;
+const GRID_HEIGHT = 60;
+const CANDY_PADDING = 8;
+const CANDY_SPEED = 30;
 
 const CANDY_COLORS = ["red", "green", "blue", "yellow", "purple", "orange"];
 const CANDYTYPES = {
@@ -47,5 +70,10 @@ const CANDYTYPES = {
     purple: "../images/purple-wrapped.png",
     orange: "../images/orange-wrapped.png",
   },
-  bomb: "../images/bomb.png",
+  color_bomb: {
+    bomb: "../images/bomb.png",
+  },
 };
+
+const DIRECTIONS = ["up", "down", "left", "right"];
+const MOVES = ["vertical", "horizontal"];
