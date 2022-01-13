@@ -59,7 +59,6 @@ class Board {
     scoreContainer.innerHTML = this.score;
     highScoreContainer.innerHTML = this.highScore;
     levelHeader.innerHTML = this.level;
-    console.log(this.level);
   }
 
   //* clear the canvas
@@ -183,12 +182,11 @@ class Board {
     if (this.isMoving) {
       let x = event.clientX - this.canvasRect.left;
       let y = event.clientY - this.canvasRect.top;
-      console.log(event.clientX, event.clientY);
 
       // check for mouse movement for grid edge and moving candyMoving (row+_1, column+_1)
       if (
         !this.checkBoardEdge() ||
-        this.selectedCandy.isValidMove(this.rows, this.columns) === false
+        this.selectedCandy.isValidMove(this.rows, this.columns) === null
       ) {
         this.isMoving = false;
         this.direction = "no-move";
@@ -223,6 +221,7 @@ class Board {
         this.selectedCandy,
         this.candiesArray
       ).swapCandies(this.direction);
+
       this.isMoving = false;
       this.offsetX = 0;
       this.offsetY = 0;
@@ -273,8 +272,18 @@ class Board {
     this.highScore = this.score;
   }
 
-  updateScore(score) {
-    this.score = score;
+  updateScore(totalScore) {
+    let score = totalScore - this.score;
+    if (score > 3 && score <= 5) {
+      sweetMusic.play();
+    } else if (score > 5 && score <= 7) {
+      tastyMusic.play();
+    } else if (score > 7 && score <= 10) {
+      divineMusic.play();
+    } else if (score > 10) {
+      deliciousMusic.play();
+    }
+    this.score = totalScore;
   }
 
   setBoard() {

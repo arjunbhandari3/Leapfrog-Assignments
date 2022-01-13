@@ -187,7 +187,6 @@ class CheckMatches {
           repeatIndex.push(i + 1);
         }
       } else {
-        console.log(group);
         if (group[i][group[i].length - 1].row >= group[i + 1][0].row) {
           repeatIndex.push(i + 1);
         }
@@ -214,15 +213,18 @@ class CheckMatches {
             this.candiesArray[obj.col][obj.row].type === "verticallyStriped"
           ) {
             stripedCandy = this.candiesArray[obj.col][obj.row];
-            stripedCandy.image = new Image();
-            stripedCandy.image.src = `../images/${stripedCandy.color}-striped-vertical.png`;
+            stripedCandy.image = new Image(
+              `../images/${stripedCandy.color}-striped-vertical.png`
+            );
             console.log("stripedCandy", stripedCandy);
           } else if (
             this.candiesArray[obj.col][obj.row].type === "horizontallyStriped"
           ) {
             stripedCandy = this.candiesArray[obj.col][obj.row];
-            stripedCandy.image = new Image();
-            stripedCandy.image.src = `../images/${stripedCandy.color}-striped-horizontal.png`;
+            stripedCandy.image = new Image(
+              `../images/${stripedCandy.color}-striped-horizontal.png`
+            );
+
             console.log("stripedCandy", stripedCandy);
           }
         }
@@ -253,7 +255,7 @@ class CheckMatches {
     updateScore,
     row,
     col,
-    matchObjectLength,
+    matchCandiesLength,
     stripedCandy,
     move
   ) {
@@ -288,52 +290,36 @@ class CheckMatches {
               }
             }
           }
-          this.removeColumnCandies(row, col, matchObjectLength);
+          this.removeColumnCandies(row, col, matchCandiesLength);
           this.resetUpperColumnCandies(row, col);
         }
       }
       // striped candy not present in the match
       else {
-        if (
-          matchObjectLength === 4 &&
-          initial === false &&
-          move === "vertical"
-        ) {
-          this.candiesArray[col][row].type = "verticallyStriped";
-          this.removeColumnCandies(
-            row + 1,
-            col,
-            matchObjectLength - 1,
-            initial
-          );
-        } else if (
-          matchObjectLength === 4 &&
-          initial === false &&
-          move === "horizontal"
-        ) {
+        if (matchCandiesLength === 4 && initial === false) {
           this.candiesArray[col][row].type = "horizontallyStriped";
           this.removeColumnCandies(
             row + 1,
             col,
-            matchObjectLength - 1,
+            matchCandiesLength - 1,
             initial
           );
-        } else if (matchObjectLength === 5 && initial === false) {
+        } else if (matchCandiesLength === 5 && initial === false) {
           this.candiesArray[col][row].type = "color_bomb";
           this.candiesArray[col][row].color = "bomb";
           this.removeColumnCandies(
             row + 1,
             col,
-            matchObjectLength - 1,
+            matchCandiesLength - 1,
             initial
           );
         } else {
-          this.removeColumnCandies(row, col, matchObjectLength, initial);
+          this.removeColumnCandies(row, col, matchCandiesLength, initial);
         }
 
         for (let k = row; k < this.candiesArray[col].length; k++) {
           if (
-            (matchObjectLength === 4 || matchObjectLength === 5) &&
+            (matchCandiesLength === 4 || matchCandiesLength === 5) &&
             initial === false
           ) {
             if (k >= row + 1) {
@@ -363,13 +349,13 @@ class CheckMatches {
           this.candiesArray[stripedCandy.column] = [];
           this.score += 8;
 
-          for (let j = col; j < col + matchObjectLength; j++) {
+          for (let j = col; j < col + matchCandiesLength; j++) {
             if (j !== stripedCandy.column) {
               this.candiesArray[j].splice(row, 1);
               this.score += 1;
             }
           }
-          for (let j = col; j < col + matchObjectLength; j++) {
+          for (let j = col; j < col + matchCandiesLength; j++) {
             if (j !== stripedCandy.column) {
               this.resetUpperColumnCandies(row, j);
             }
@@ -402,21 +388,19 @@ class CheckMatches {
       }
       // striped candy not present in the match
       else {
-        for (let j = col; j < col + matchObjectLength; j++) {
+        for (let j = col; j < col + matchCandiesLength; j++) {
           if (j === col) {
-            if (matchObjectLength === 4 && initial === false) {
-              console.log(this.candiesArray[j][row], "arjun");
+            if (matchCandiesLength === 4 && initial === false) {
+              console.log(this.candiesArray[j][row]);
               this.candiesArray[j][row].type = `${move}lyStriped`;
-              this.candiesArray[j][row].image = new Image();
-              this.candiesArray[j][
-                row
-              ].image.src = `../images/${this.candiesArray[j][row].color}-striped-${move}.png`;
+              this.candiesArray[j][row].image = new Image(
+                `../images/${this.candiesArray[j][row].color}-striped-${move}.png`
+              );
               this.score += 1;
-            } else if (matchObjectLength === 5 && initial === false) {
+            } else if (matchCandiesLength === 5 && initial === false) {
               this.candiesArray[j][row].color = "all_color";
               this.candiesArray[j][row].type = "bomb";
-              this.candiesArray[j][row].image = new Image();
-              this.candiesArray[j][row].image.src = `../images/bomb.png`;
+              this.candiesArray[j][row].image = new Image(`../images/bomb.png`);
               this.score += 1;
             } else {
               this.candiesArray[j].splice(row, 1);
@@ -430,10 +414,10 @@ class CheckMatches {
           }
         }
 
-        for (let j = col; j < col + matchObjectLength; j++) {
+        for (let j = col; j < col + matchCandiesLength; j++) {
           for (let i = row; i < this.candiesArray[j].length; i++) {
             if (
-              (matchObjectLength === 4 || matchObjectLength === 5) &&
+              (matchCandiesLength === 4 || matchCandiesLength === 5) &&
               initial === false
             ) {
               if (j !== col) {
@@ -462,10 +446,10 @@ class CheckMatches {
   }
 
   //* remove column candies in the array
-  removeColumnCandies(row, col, matchObjectLength, initial) {
-    this.candiesArray[col].splice(row, matchObjectLength);
+  removeColumnCandies(row, col, matchCandiesLength, initial) {
+    this.candiesArray[col].splice(row, matchCandiesLength);
     if (initial === false) {
-      this.score += matchObjectLength;
+      this.score += matchCandiesLength;
     }
   }
 

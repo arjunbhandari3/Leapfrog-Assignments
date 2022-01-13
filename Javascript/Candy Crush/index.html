@@ -10,15 +10,18 @@
   </head>
   <body>
     <div class="container">
-      <div id="start-screen">
-        <img id="start-background" src="images/start-background.jpg" />
-        <!-- <img id="start-mobile-background" src="images/mobile-start-bg.jpg" /> -->
-        <img id="play" src="images/play.png" />
+      <div class="start-container">
+        <div id="start-screen">
+          <img id="start-background" src="images/start-background.jpg" />
+          <!-- <img id="start-mobile-background" src="images/mobile-start-bg.jpg" /> -->
+          <img id="play" src="images/play.png" />
+        </div>
+        <div id="level-screen">
+          <img id="level-background" src="images/level-background.jpg" />
+          <h1 id="level">Level <span></span></h1>
+        </div>
       </div>
-      <div id="level-screen">
-        <img id="level-background" src="images/level-background.jpg" />
-        <h1 id="level">Level <span></span></h1>
-      </div>
+
       <div id="game-container">
         <div class="header">
           <h1 id="level-header">Level <span></span></h1>
@@ -72,7 +75,7 @@
             <canvas id="canvas"></canvas>
           </div>
           <div id="game-over-screen">
-            <img id="moves-finished" src="images/out_of_moves.png" />
+            <img id="moves-finished" src="images/failed.png" />
             <img id="retry" src="images/retry.png" />
           </div>
 
@@ -80,6 +83,35 @@
             <img id="level-completed" src="images/level_completed.png" />
             <img id="next" src="images/play.png" />
           </div>
+
+          <audio id="drop-music" src="sounds/drop.wav" preload="auto"></audio>
+          <audio id="swap-music" src="sounds/swap.wav" preload="auto"></audio>
+          <audio
+            id="delicious-music"
+            src="sounds/delicious.wav"
+            preload="auto"
+          ></audio>
+          <audio
+            id="divine-music"
+            src="sounds/divine.wav"
+            preload="auto"
+          ></audio>
+          <audio id="sweet-music" src="sounds/sweet.wav" preload="auto"></audio>
+          <audio id="tasty-music" src="sounds/tasty.wav" preload="auto"></audio>
+          <audio id="level-completed-music" loop>
+            <source
+              src="sounds/level-completed.mp3"
+              type="audio/mpeg"
+              preload="auto"
+            />
+          </audio>
+          <audio id="game-over-music">
+            <source
+              src="sounds/game-over.mp3"
+              type="audio/mpeg"
+              preload="auto"
+            />
+          </audio>
         </div>
       </div>
     </div>

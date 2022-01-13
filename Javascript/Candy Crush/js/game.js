@@ -55,16 +55,20 @@ class Game {
 
   gameOver() {
     gameOverScreen.style.display = "block";
+    gameOverMusic.play();
     retryButton.addEventListener("click", () => {
       this.nextScreen();
+      gameOverMusic.pause();
     });
   }
 
   gameCompleted() {
     levelCompleted.style.display = "block";
+    levelCompletedMusic.play();
     localStorage.setItem("candy-crush-level-completed", this.level.level);
     nextButton.addEventListener("click", () => {
       this.nextScreen();
+      levelCompletedMusic.pause();
     });
   }
 

@@ -54,6 +54,7 @@ body {
 
 #level-screen {
   display: none;
+  z-index: -1;
 }
 
 #level-background {
@@ -62,7 +63,6 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
 }
 
 #level {
@@ -100,6 +100,7 @@ body {
   margin-left: 0.2em;
   text-align: center;
 }
+
 .title {
   font-size: 2rem;
   color: #fff;
@@ -165,47 +166,51 @@ body {
 
 #canvas {
   background-color: pink;
-  z-index: 2;
+  cursor: pointer;
   /* width: 600px;
   height: 600px; */
 }
 
 #game-over-screen {
   display: none;
-  backdrop-filter: blur(10px);
+  position: relative;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
 }
 
 #retry {
   position: absolute;
-  top: 25rem;
-  left: 50%;
+  top: 10em;
+  left: -15em;
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
 
 #moves-finished {
-  top: 15rem;
-  left: 50%;
+  top: 1em;
+  left: -15em;
   transform: translate(-50%, -50%);
   position: absolute;
 }
 
 #level-completed-screen {
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.5);
   display: none;
+  position: relative;
 }
 
 #next {
-  top: 25em;
-  left: 50%;
+  top: 10em;
+  left: -15em;
   transform: translate(-50%, -50%);
   position: absolute;
   cursor: pointer;
 }
 
 #level-completed {
-  top: 15rem;
-  left: 50%;
+  top: 1em;
+  left: -15em;
   transform: translate(-50%, -50%);
   position: absolute;
 }

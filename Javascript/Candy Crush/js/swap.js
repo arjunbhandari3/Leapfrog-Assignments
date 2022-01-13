@@ -11,6 +11,7 @@ class Swap {
       if (this.checkMatch(direction)) {
         return this.flipCandy(direction);
       } else {
+        swapMusic.play();
         return false;
       }
     }
@@ -20,7 +21,7 @@ class Swap {
     let swapCandyRow = this.selectedCandy.row;
     let swapCandyCol = this.selectedCandy.column;
     let candyToSwap;
-
+    dropMusic.play();
     if (direction === "left") {
       swapCandyCol = this.selectedCandy.column - 1;
       candyToSwap = this.moveSwappingCandy(swapCandyRow, swapCandyCol);

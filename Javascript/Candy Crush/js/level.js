@@ -19,7 +19,7 @@ class Level {
       playButton.style.display = "none";
       levelScreen.style.display = "none";
       gameContainer.style.display = "block";
-    }, 2000);
+    }, 1500);
   }
 
   nextLevel() {

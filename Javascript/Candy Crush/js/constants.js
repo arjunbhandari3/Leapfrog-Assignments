@@ -11,7 +11,6 @@ const levelContainer = document.querySelector("#level span");
 
 // game screen elements
 const gameContainer = document.getElementById("game-container");
-const backgroundMusic = document.getElementById("background-music");
 const playMusicButton = document.getElementById("play-music");
 const gameOverScreen = document.getElementById("game-over-screen");
 const retryButton = document.getElementById("retry");
@@ -27,6 +26,17 @@ const targetContainer = document.getElementById("target");
 const highScoreContainer = document.getElementById("high-score");
 const timeLeftContainer = document.querySelector("#time-left span");
 const levelHeader = document.querySelector("#level-header span");
+
+// audio elements
+const backgroundMusic = document.getElementById("background-music");
+const gameOverMusic = document.getElementById("game-over-music");
+const levelCompletedMusic = document.getElementById("level-completed-music");
+const sweetMusic = document.getElementById("sweet-music");
+const tastyMusic = document.getElementById("tasty-music");
+const divineMusic = document.getElementById("divine-music");
+const deliciousMusic = document.getElementById("delicious-music");
+const dropMusic = document.getElementById("drop-music");
+const swapMusic = document.getElementById("swap-music");
 
 // Grid and Candy Constants
 const CANDY_WIDTH = 45;
