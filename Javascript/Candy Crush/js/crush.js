@@ -211,17 +211,23 @@ class CheckMatches {
         for (let obj of matchObject) {
           if (this.candiesArray[obj.col][obj.row].type === "verticalStriped") {
             stripedCandy = this.candiesArray[obj.col][obj.row];
-            stripedCandy.image = new Image(
-              `../images/${stripedCandy.color}-striped-vertical.png`
+            var candy = Candy().getRandomCandy(
+              stripedCandy.type,
+              stripedCandy.color
             );
+            stripedCandy.image = candy.image;
+            stripedCandy.image.src = `images/${stripedCandy.color}-striped-vertical.png`;
             console.log("stripedCandy", stripedCandy);
           } else if (
             this.candiesArray[obj.col][obj.row].type === "horizontalStriped"
           ) {
             stripedCandy = this.candiesArray[obj.col][obj.row];
-            stripedCandy.image = new Image(
-              `../images/${stripedCandy.color}-striped-horizontal.png`
+            var candy = Candy().getRandomCandy(
+              stripedCandy.type,
+              stripedCandy.color
             );
+            stripedCandy.image = candy.image;
+            stripedCandy.image.src = `images/${stripedCandy.color}-striped-horizontal.png`;
 
             console.log("stripedCandy", stripedCandy);
           }
@@ -391,14 +397,17 @@ class CheckMatches {
             if (matchCandiesLength === 4 && initial === false) {
               console.log(this.candiesArray[j][row]);
               this.candiesArray[j][row].type = `${move}Striped`;
-              this.candiesArray[j][row].image = new Image(
-                `../images/${this.candiesArray[j][row].color}-striped-${move}.png`
-              );
+              this.candiesArray[j][row].image = new Image();
+              this.candiesArray[j][
+                row
+              ].image.src = `images/${this.candiesArray[j][row].color}-striped-${move}.png`;
+
               this.score += 1;
             } else if (matchCandiesLength === 5 && initial === false) {
               this.candiesArray[j][row].color = "all_color";
               this.candiesArray[j][row].type = "bomb";
-              this.candiesArray[j][row].image = new Image(`../images/bomb.png`);
+              this.candiesArray[j][row].image = new Image();
+              this.candiesArray[j][row].image.src = `images/bomb.png`;
               this.score += 1;
             } else {
               this.candiesArray[j].splice(row, 1);

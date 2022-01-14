@@ -232,7 +232,6 @@ class Board {
 
       if (swapCandies) {
         let checkMatches = new CheckMatches(this.candiesArray);
-        console.log(swapCandies);
         if (
           swapCandies[0].type === "color_bomb" ||
           swapCandies[1].type === "color_bomb"

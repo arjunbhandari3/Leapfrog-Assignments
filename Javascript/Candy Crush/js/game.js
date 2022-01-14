@@ -40,6 +40,18 @@ class Game {
       "click",
       this.toggleBackgroundMusic.bind(this)
     );
+
+    retryButton.addEventListener("click", () => {
+      this.nextScreen();
+      gameOverMusic.pause();
+      backgroundMusic.play();
+    });
+
+    nextButton.addEventListener("click", () => {
+      this.nextScreen();
+      levelCompletedMusic.pause();
+      backgroundMusic.play();
+    });
   }
 
   // toggle background Music
@@ -55,21 +67,15 @@ class Game {
 
   gameOver() {
     gameOverScreen.style.display = "block";
+    backgroundMusic.pause();
     gameOverMusic.play();
-    retryButton.addEventListener("click", () => {
-      this.nextScreen();
-      gameOverMusic.pause();
-    });
   }
 
   gameCompleted() {
     levelCompleted.style.display = "block";
+    backgroundMusic.pause();
     levelCompletedMusic.play();
     localStorage.setItem("candy-crush-level-completed", this.level.level);
-    nextButton.addEventListener("click", () => {
-      this.nextScreen();
-      levelCompletedMusic.pause();
-    });
   }
 
   nextScreen() {
