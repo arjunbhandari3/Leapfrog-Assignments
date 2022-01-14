@@ -51,31 +51,6 @@ body {
   align-items: center;
 }
 
-/* 
-#level-screen {
-  display: none;
-}
-
-#level-background {
-  display: none;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-} */
-
-#level {
-  display: none;
-  top: 60%;
-  left: 75%;
-  font-size: 100px;
-  color: #fff;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-  align-items: center;
-}
-
 #game-container {
   position: relative;
   top: 0;

@@ -209,16 +209,14 @@ class CheckMatches {
         let stripedCandy = null;
 
         for (let obj of matchObject) {
-          if (
-            this.candiesArray[obj.col][obj.row].type === "verticallyStriped"
-          ) {
+          if (this.candiesArray[obj.col][obj.row].type === "verticalStriped") {
             stripedCandy = this.candiesArray[obj.col][obj.row];
             stripedCandy.image = new Image(
               `../images/${stripedCandy.color}-striped-vertical.png`
             );
             console.log("stripedCandy", stripedCandy);
           } else if (
-            this.candiesArray[obj.col][obj.row].type === "horizontallyStriped"
+            this.candiesArray[obj.col][obj.row].type === "horizontalStriped"
           ) {
             stripedCandy = this.candiesArray[obj.col][obj.row];
             stripedCandy.image = new Image(
@@ -263,9 +261,9 @@ class CheckMatches {
     if (move === "vertical") {
       // striped candy present in the match
       if (stripedCandy) {
-        if (stripedCandy.type === "verticallyStriped") {
+        if (stripedCandy.type === "verticalStriped") {
           for (let candy of this.candiesArray[stripedCandy.column]) {
-            if (candy.type === "horizontallyStriped") {
+            if (candy.type === "horizontalStriped") {
               this.removeRowCandies(candy.row);
               this.resetUpperCandiesPosition(candy.row);
             }
@@ -277,7 +275,7 @@ class CheckMatches {
         else {
           for (let column of this.candiesArray) {
             if (this.candiesArray.findIndex((val) => val === column) !== col) {
-              if (column[stripedCandy.row].type === "verticallyStriped") {
+              if (column[stripedCandy.row].type === "verticalStriped") {
                 column = [];
                 this.score += 8;
               } else {
@@ -297,7 +295,7 @@ class CheckMatches {
       // striped candy not present in the match
       else {
         if (matchCandiesLength === 4 && initial === false) {
-          this.candiesArray[col][row].type = "horizontallyStriped";
+          this.candiesArray[col][row].type = "horizontalStriped";
           this.removeColumnCandies(
             row + 1,
             col,
@@ -336,10 +334,10 @@ class CheckMatches {
     // horizontal match
     else {
       if (stripedCandy) {
-        if (stripedCandy.type === "verticallyStriped") {
+        if (stripedCandy.type === "verticalStriped") {
           for (let candy of this.candiesArray[stripedCandy.column]) {
             if (candy !== stripedCandy) {
-              if (candy.type === "horizontallyStriped") {
+              if (candy.type === "horizontalStriped") {
                 this.removeRowCandies(candy.row);
                 this.resetUpperCandiesPosition(candy.row);
               }
@@ -364,7 +362,7 @@ class CheckMatches {
         // candy is horizontally striped
         else {
           for (let column of this.candiesArray) {
-            if (column[stripedCandy.row].type === "verticallyStriped") {
+            if (column[stripedCandy.row].type === "verticalStriped") {
               column.splice(0, 8);
               this.score += 8;
             }
@@ -392,7 +390,7 @@ class CheckMatches {
           if (j === col) {
             if (matchCandiesLength === 4 && initial === false) {
               console.log(this.candiesArray[j][row]);
-              this.candiesArray[j][row].type = `${move}lyStriped`;
+              this.candiesArray[j][row].type = `${move}Striped`;
               this.candiesArray[j][row].image = new Image(
                 `../images/${this.candiesArray[j][row].color}-striped-${move}.png`
               );

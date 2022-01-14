@@ -1,14 +1,10 @@
 // HTML elements constants
 
 //start screen elements
+const startContainer = document.getElementById("start-container");
 const startScreen = document.getElementById("start-screen");
 const startBackground = document.getElementById("start-background");
 const playButton = document.getElementById("play");
-
-const levelScreen = document.getElementById("level-screen");
-const levelBackground = document.getElementById("level-background");
-const levelText = document.getElementById("level");
-const levelContainer = document.querySelector("#level span");
 
 // game screen elements
 const gameContainer = document.getElementById("game-container");

@@ -16,8 +16,6 @@ class Level {
   setTimeout() {
     this.increase = setTimeout(() => {
       startScreen.style.display = "none";
-      playButton.style.display = "none";
-      // levelScreen.style.display = "none";
       gameContainer.style.display = "block";
     }, 1500);
   }
@@ -30,8 +28,6 @@ class Level {
         this.level = 1;
       }
     }
-
-    // levelContainer.innerHTML = this.level;
     this.setChangesToNextLevel();
     this.storeLevel();
   }
