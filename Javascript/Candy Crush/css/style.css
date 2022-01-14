@@ -50,6 +50,7 @@ body {
   cursor: pointer;
   align-items: center;
 }
+
 /* 
 #level-screen {
   display: none;
@@ -110,6 +111,7 @@ body {
 }
 
 #play-music {
+  position: absolute;
   top: 20px;
   right: 20px;
   width: 50px;
