@@ -2,9 +2,7 @@ var game;
 
 playButton.addEventListener("click", () => {
   startScreen.style.display = "none";
-  playButton.style.display = "none";
-  levelScreen.style.display = "block";
-  gameContainer.style.display = "none";
+  gameContainer.style.display = "block";
   backgroundMusic.play();
 
   // Game(target, moves, rows, columns)

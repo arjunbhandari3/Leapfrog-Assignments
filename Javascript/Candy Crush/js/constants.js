@@ -7,6 +7,7 @@ const playButton = document.getElementById("play");
 
 const levelScreen = document.getElementById("level-screen");
 const levelBackground = document.getElementById("level-background");
+const levelText = document.getElementById("level");
 const levelContainer = document.querySelector("#level span");
 
 // game screen elements
